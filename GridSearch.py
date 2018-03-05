@@ -66,7 +66,7 @@ def run_script(p, options):
 
     node_id = p.setup(
     timestep=dt, min_delay=delay, max_delay=delay,
-    db_name='va_benchmark.sqlite', **extra)
+    db_name='va_benchmark.sqlite')
 
     p.set_number_of_neurons_per_core(p.IF_cond_exp, 50)      # this will set
 
