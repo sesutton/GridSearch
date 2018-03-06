@@ -112,7 +112,7 @@ class SpikeTrainStats():
         
         firing_rate = self.calculate_FiringRate(cnts, t_r_seconds)
         CV_of_ISI = self.calculate_CVISI(ids, cnts)
-        return firing_rate, CV_of_ISI
+        return firing_rate, CV_of_ISI, self.min_time, self.max_time
    
     def calculate_CVISI(self, ids, cnts):
         
